@@ -1,0 +1,11 @@
+server:
+  port: 9080
+  ssl:
+    enabled: true
+    client-auth: need
+    key-store: classpath:sample-server.pfx
+    key-store-password: sample-server
+    key-alias: sample-server
+    key-store-type: PKCS12
+    trust-store: classpath:sample-server-trust.ks
+    trust-store-password: sample-server
